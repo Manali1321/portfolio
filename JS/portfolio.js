@@ -1,10 +1,11 @@
-let slideIndex = 0;
+// reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -14,5 +15,6 @@ function showSlides() {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 3000);
 }
