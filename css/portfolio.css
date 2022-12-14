@@ -1,0 +1,114 @@
+/* change the name and all copy-pase from slider */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-weight: 500;
+  font-size: 64px;
+  padding: 17px 0;
+}
+h2 {
+  font-size: 18px;
+}
+header img {
+  padding: 84px 173px 0;
+}
+header {
+  text-align: center;
+}
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+.wrapper {
+  display: flex;
+}
+main p {
+  padding: 0 15px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+.social-icon li {
+  padding: 25px 12px;
+}
+.skill-detail {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 35px 0;
+}
+.skill-detail li {
+  border: 1px solid #0097a9;
+  border-radius: 19px;
+  padding: 6px 14px;
+}
+.lato-style {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+.font-style-itc {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic",
+    "ITC Franklin Gothic", Arial, sans-serif;
+  font-weight: 500;
+}
+/* The dots/bullets/indicators */
+.dot {
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#leftSide {
+  padding: 0 40px;
+  width: 44%;
+
+  /* overflow: scroll; */
+}
+#rightSide {
+  height: 100%;
+  width: 56%;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  overflow-x: hidden;
+  position: sticky;
+}
+#post-card {
+  width: 330px;
+  height: 480px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: auto;
+  padding: 30px 0 50px;
+}
+#post-header img:first-child {
+  width: 20px;
+  height: 20px;
+}
+#post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 12px;
+}
+#post-content {
+  padding-bottom: 100px;
+}
